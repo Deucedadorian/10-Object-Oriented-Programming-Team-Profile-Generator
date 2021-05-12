@@ -2,12 +2,30 @@ const Employee = require('../lib/employee');
 
 describe('Employee', () => {
     describe('getName', () => {
-        it('should take a name given by the user', () => {
-            const inputName = 'Bob'
+        it('should return the name of the employee', () => {
+            const inputName = 'Bob';
 
-            const name = new Employee().getName(inputName);
+            const employeeName = new Employee({name: 'Bob'}).getName();
 
-            expect(name).toEqual(inputName);
+            expect(employeeName).toEqual(inputName);
         });
     });
+    describe('getId', () => {
+        it('should return the id of the given employee', () => {
+            const inputId = 2;
+
+            const id = new Employee({id: 2}).getId();
+
+            expect(id).toEqual(inputId);
+        }); 
+    });
+    describe('getEmail', () => {
+        it('should return the email of the given employee', () => {
+            const inputEmail = 'example@email.com';
+
+            const email = new Employee({email: 'example@email.com'}).getEmail();
+
+            expect(email).toEqual(inputEmail);
+        })
+    })
 });
