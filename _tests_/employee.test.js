@@ -26,6 +26,15 @@ describe('Employee', () => {
             const email = new Employee({email: 'example@email.com'}).getEmail();
 
             expect(email).toEqual(inputEmail);
-        })
-    })
+        });
+    });
+    describe('getRole', () => {
+        it('should return \'Employee\'', () => {
+            const employeeType = 'Employee';
+
+            const result = new Employee({}).getRole();
+
+            expect(result).toEqual(employeeType);
+        });
+    });
 });
