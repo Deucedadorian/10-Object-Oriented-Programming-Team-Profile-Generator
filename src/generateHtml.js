@@ -1,7 +1,6 @@
-const Manager = require('../lib/manager');
-const Engineer = require('../lib/engineer');
-const Intern = require('../lib/intern');
-
+//generateHtml takes in the employees array generated 
+//from the prompts answered by the user and returns
+//html in a template literal
 const generateHtml = (employees) => {
     
     let htmlFile = `<!DOCTYPE html>
