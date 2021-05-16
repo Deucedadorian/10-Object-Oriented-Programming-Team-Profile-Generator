@@ -1,22 +1,22 @@
 .container-fluid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-    width: 18rem;
-    margin: 30px;
+  width: 18rem;
+  margin: 30px;
 }
 
 @media (max-width: 330px) {
-    .card {
-        width: 250px;
-    }
+  .card {
+    width: 250px;
+  }
 }
 
 @media (min-width: 1400px) {
-    .container-fluid {
-        width: 1400px;
-    }
+  .container-fluid {
+    width: 1400px;
+  }
 }
